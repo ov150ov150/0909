@@ -1,5 +1,5 @@
 music.setVolume(64)
-let strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P0, 18, NeoPixelMode.RGB)
 basic.forever(function () {
     if (input.soundLevel() > 129) {
         strip.showBarGraph(input.soundLevel(), 100)
